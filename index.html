@@ -1,0 +1,479 @@
+<!-- tags de abertura - Feito por Joni Gund - julho de 2022-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- cabecalho com as meta tags de configuracao inicial -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web CV</title>
+  
+  <!-- Bootstrap css   -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+  <!-- Pacote de icones BOXICONS -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Pacote personalizado css -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<!-- estrutura da pagina -->
+<body>
+
+  <div class="container" id="documento">
+
+      <div class="bloco_esquerda">
+
+          <!-- Perfil -->
+          <div class="perfil">
+              <div class="img_config">
+                  <img src="imagens/a001.jpg">
+              </div>
+              <h1>Joni Gund</h1>
+              <h5>Desenvolvedor<br>Engenheiro Agrônomo</h5>
+          </div>
+
+          <!-- Contato -->
+          <div class="itens_esquerda">
+              <br><h4 class="titulo">Contatos</h4><br>
+              <ul>
+                  <li>
+                      <span class="icons"><i class="bx bx-window-alt"></i></span>
+                      <a></a><span href="www.linkedin.com/in/joni-gund" class="text">www.linkedin.com/in/joni-gund</span></a>
+                  </li>
+                  <li>
+                      <span class="icons"><i class="bx bx-envelope"></i></span>
+                      <a href="./contato.html" class="text" target="_blank">gundjoni@yahoo.com</a>
+                  </li>
+                  <li>
+                      <span class="icons"><i class="bx bx-phone"></i></span>
+                      <span class="text">+55 45 3096 - 2694</span>
+                  </li>
+              </ul>
+          </div>
+
+         <!-- Botao para imprimir pdf -->
+         <div class="perfilbase">
+            <div>
+            <br><button type="button" class="btn btn-outline-success" onclick="location.href='cv.pdf'">Imprimir CV</button>
+         </div>
+         </div>
+          
+      </div>
+
+
+      <div class="bloco_direita">
+
+        <!-- botoes bootstrap -->
+        <button type="button" href="#modal_perfil" class="btn btn-outline-primary btn-lg btn-block" data-toggle="modal" data-target="#modal_perfil">Perfil Profissional</button>
+        <button type="button" href="#modal_formacao" class="btn btn-outline-primary btn-lg btn-block" data-toggle="modal" data-target="#modal_formacao">Formação Acadêmica</button>
+        <button type="button" href="#modal_experiencia" class="btn btn-outline-primary btn-lg btn-block" data-toggle="modal" data-target="#modal_experiencia">Experiência Profissional</button>
+        <button type="button" href="#modal_habilidades" class="btn btn-outline-primary btn-lg btn-block" data-toggle="modal" data-target="#modal_habilidades">Habilidades</button>
+        <button type="button" href="#modal_interesses" class="btn btn-outline-primary btn-lg btn-block" data-toggle="modal" data-target="#modal_interesses">Interesses</button>
+        <button type="button" href="#modal_idiomas" class="btn btn-outline-primary btn-lg btn-block" data-toggle="modal" data-target="#modal_idiomas">Idiomas</button>
+        <a type="button" href="https://github.com/jonigund" class="btn btn-outline-primary btn-lg btn-block" target="_blank">Portfólio</a> <!-- tag a para conseguir referenciar link para outro doc -->
+      </div>
+
+
+  <!-- Modais -->
+
+  <!-- Modal perfil profissional -->
+  <div class="modal fade" id="modal_perfil" tabindex="-1" role="dialog" aria-labelledby="Perfil Profissional" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Perfil Profissional</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+          <p>Profissional com experiência no setor agro, gestão de carteira de clientes, vendas, aquisições, projetos e execuções técnicas, difusão de tecnologia, com passagem por intermediação de mão de obra e análise de crédito, com conhecimentos em Analise e Desenvolvimento de Sistemas.</p>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Modal formação profissional -->
+  <div class="modal fade" id="modal_formacao" tabindex="-1" role="dialog" aria-labelledby="Formação Profissional" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Formação Profissional</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+
+
+          <div class="conteudo">
+            <div class="intervalo">
+                <h6>2019 : Atualmente - Analise e Desenvolvimento de Sistemas</h6>
+            </div>
+            <div class="desc">
+                <p>Instituição: Uninter</p>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+                <h6>2007 : 2008 - MBA Gestão Empresarial</h6>
+            </div>
+            <div class="desc">
+                <p>Instituição: FAG</p>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+                <h6>2005 : 2006 - Especialização em Gestão Ambiental</h6>
+            </div>
+            <div class="desc">
+                <p>Instituição: Faculdade Padre João Bagozzi</p>
+            </div>
+          </div>          
+          
+          <div class="conteudo">
+            <div class="intervalo">
+                <h6>2000 : 2004 - Agronomia</h6>
+            </div>
+            <div class="desc">
+                <p>Instituição: Universidade Estadual do Oeste do Paraná</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+    
+
+  <!-- Modal experiência profissional -->
+  <div class="modal fade" id="modal_experiencia" tabindex="-1" role="dialog" aria-labelledby="Experiência Profissional" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Experiência Profissional</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+
+
+          <div class="conteudo">
+            <div class="intervalo">
+                <h6>2019 : Atualmente - Autônomo</h6>
+            </div>
+            <div class="desc">
+                <p>Desenvolvedor freelancer; prototipagem e impressão 3D FDM.</p>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+                <h6>2016 : 2017 - Agente Administrativo</h6>
+            </div>
+            <div class="desc">
+                <p>Prefeitura Municipal de Cascavel-PR</p>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+                <h6>2004 : 2014 - Engenheiro Agrônomo</h6>
+            </div>
+            <div class="desc">
+                <p>Coopavel Cooperativa Agroindustrial</p>
+            </div>
+          </div>          
+          
+         
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal habilidades -->
+  <div class="modal fade" id="modal_habilidades" tabindex="-1" role="dialog" aria-labelledby="Habilidades" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Habilidades</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Git</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Bootstrap</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Linux</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Java</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>C</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>C#</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Phyton</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Dart</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Flutter</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Node.js</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>HTML</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>CSS</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>JavaScript</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>SQL</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow=50" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Firebase</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Angular</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+          
+         
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal interesses -->
+  <div class="modal fade" id="modal_interesses" tabindex="-1" role="dialog" aria-labelledby="Interesses" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Interesses</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+          <ul class="interesses">
+            <h5><i class="bx bx-music"></i> Música</h5>
+            <h5><i class="bx bx-code-alt"></i> Programação</h5>
+            <h5><i class="bx bx-car"></i> Agro</h5>
+            <h5><i class="bx bx-car"></i> Antigomobilismo</h5>
+            <h5><i class="bx bx-briefcase"></i> Viagem</h5>
+            <h5><i class="bx bx-game"></i> Jogos</h5>
+          </ul>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Idiomas -->
+   <div class="modal fade" id="modal_idiomas" tabindex="-1" role="dialog" aria-labelledby="Idiomas" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Idiomas</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Inglês</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+          <div class="conteudo">
+            <div class="intervalo">
+              <h6>Alemão</h6> 
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div><br>
+            </div>
+          </div>
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+ 
+  </div>
+
+
+  <!-- scripts javascript utilizados nesse doc -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

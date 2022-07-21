@@ -1,0 +1,54 @@
+<!-- tags de abertura - Feito por Joni Gund - julho de 2022-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- cabecalho com as meta tags de configuracao inicial -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para contato</title>
+  
+    <!-- Pacote personalizado css -->
+    <link rel="stylesheet" href="css/formstyle.css">
+
+    <!-- Recurso para permitir retorno de requisição Node.js localmente sem o erro Favicon -->
+    <link rel="icon" href="data:,">
+
+</head>
+
+<!-- estrutura da pagina -->
+<body>
+
+    <div class="container">        
+        <h2>Entre em contato:</h2><br>  
+        <form id="form" class="form" onsubmit="enviarEmail()">
+
+            <div class="formulario">
+                <label>Digite seu nome</label><br>
+                <input type="texto" id="nome" placeholder="Digite seu nome completo..."/>
+            </div>
+
+            <div class="formulario">
+                <label>Email</label><br>
+                <input type="text" id="email" placeholder="Digite seu email.." />
+            </div>
+
+            <div class="formulario">
+                <label>Mensagem</label><br>
+                <textarea id="mensagem" placeholder="Deixe aqui sua mensagem..."></textarea>
+            </div>
+
+            <div class="formulario">
+                <button type="submit">Enviar</button>
+            </div>      
+
+        </form>
+    </div>
+
+     
+    <!-- scripts javascript utilizados nesse doc -->
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
